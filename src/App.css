@@ -4,7 +4,7 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  text-align: left; /* 필요시 */
+  text-align: left;
 }
 
 .logo {
@@ -13,9 +13,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -41,4 +43,73 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* ----------------------------- */
+/* 📱 반응형 스타일 추가          */
+/* ----------------------------- */
+
+/* 태블릿 (최대 1024px) */
+@media (max-width: 1024px) {
+  .logo {
+    height: 4.5em;
+    padding: 1em;
+  }
+
+  .card {
+    padding: 1.5em;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+/* 모바일 (최대 768px) */
+@media (max-width: 768px) {
+  .logo {
+    height: 3.5em;
+    padding: 0.8em;
+  }
+
+  .card {
+    padding: 1em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.9em;
+  }
+}
+
+/* 초소형 모바일 (최대 480px) */
+@media (max-width: 480px) {
+  .logo {
+    height: 3em;
+    padding: 0.5em;
+  }
+
+  .card {
+    padding: 0.8em;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+  }
 }
