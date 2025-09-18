@@ -1,7 +1,7 @@
 // src/components/ImageSlider.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper/modules"; // 👈 Autoplay 제거
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -24,7 +24,7 @@ export default function ImageSlider({ images = [] }) {
         }}
         pagination={{ clickable: true }}
         loop={false} // 끝나면 다시 처음으로
-        modules={[EffectCoverflow, Pagination]} // 👈 Autoplay 제거
+        modules={[EffectCoverflow, Pagination]} 
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
